@@ -1,8 +1,7 @@
-import first from './first';
-import second from './second';
-import third from './third';
+import first from '../common/parents/first';
+import second from '../common/parents/second';
+import third from '../common/parents/third';
 
-import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
@@ -15,23 +14,30 @@ struct OldIndex {
         TabContent() {
           first()
         }
-        .linearGradient({ direction: GradientDirection.Bottom, colors: [[0x007FFF, 0.0], [0xAFEEEE, 0.7]] })
+        .linearGradient({
+          direction: GradientDirection.Bottom,  // 设置渐变方向
+          colors: []  // 如果不需要颜色，可以传递空数组
+        })
         .tabBar({ icon: $r('app.media.109'), text: "首页" })
-      //  .onClick(() => this.pushfirst());
 
         // Rehabilitation Tab - Navigate to Third Page
         TabContent() {
          third()
         }
-        .linearGradient({ direction: GradientDirection.Bottom, colors: [[0x007FFF, 0.0], [0xAFEEEE, 0.7]] })
+        .linearGradient({
+          direction: GradientDirection.Bottom,  // 设置渐变方向
+          colors: []  // 如果不需要颜色，可以传递空数组
+        })
         .tabBar({ icon: $r('app.media.110'), text: "医疗档案" })
-       // .onClick(() => this.pushthird());
 
         // Mine Tab - User Profile Page
         TabContent() {
           second()
         }
-        .linearGradient({ direction: GradientDirection.Bottom, colors: [[0x007FFF, 0.0], [0xAFEEEE, 0.7]] })
+        .linearGradient({
+          direction: GradientDirection.Bottom,  // 设置渐变方向
+          colors: []  // 如果不需要颜色，可以传递空数组
+        })
         .tabBar({ icon: $r('app.media.111'), text: "个人中心" })
       }
       .width("100%")

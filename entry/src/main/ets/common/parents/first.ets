@@ -1,6 +1,6 @@
-import { BusinessError } from '@kit.BasicServicesKit';
+
 import { UIContext } from "@ohos.arkui.UIContext";
-import { router } from '@kit.ArkUI';
+
 
 
 @Entry
@@ -9,38 +9,6 @@ export default struct Index {
   @StorageProp('_UIContext') _UIContext: UIContext | null = null;
   @State message: string = 'Hello World';
 
-  pushfirst = () => {
-    router.pushUrl({url:'pages/first'}, router.RouterMode.Standard, (err) => {
-    if (err) {
-      console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
-      return;
-    }
-    console.info('Invoke pushUrl succeeded.')}
-  )
-  this.message = 'first page';
-  }
-
-  pushsecond = () => {
-    router.pushUrl({url:'pages/second'}, router.RouterMode.Standard, (err) => {
-      if (err) {
-        console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
-        return;
-      }
-      console.info('Invoke pushUrl succeeded.')}
-    )
-    this.message = 'second page';
-  }
-
-  pushthird = () => {
-    router.pushUrl({url:'pages/third'}, router.RouterMode.Standard, (err) => {
-      if (err) {
-        console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
-        return;
-      }
-      console.info('Invoke pushUrl succeeded.')}
-    )
-    this.message = 'third page';
-  }
 
   build() {
     Column() {
@@ -134,13 +102,13 @@ export default struct Index {
               .position({ x: "15vp", y: "45vp" })
               .borderColor("#2d2a2a")
               .borderRadius("5vp")
-              .opacity(0.52)
+             // .opacity(0.52)
               .shadow({ offsetX: 0, offsetY: 0, radius: 0, color: "#e3e3e3" })
             Image($r('app.media.108'))
               .width("30vp")
               .height("30vp")
               .position({ x: "310vp", y: "10vp" })
-              .syncLoad(false)
+             // .syncLoad(false)
               .objectFit(ImageFit.Contain)
           }     //ai智能问诊
           .width("100%")
@@ -149,7 +117,7 @@ export default struct Index {
           .borderWidth("2vp")
           .borderColor("#ffffffff")
           .borderRadius("10vp")
-          .opacity(0.4)
+          //.opacity(0.4)
           .shadow({ offsetX: 0, offsetY: 0, radius: 0, color: "#ff000000" })
           .alignItems(VerticalAlign.Center)
           .justifyContent(FlexAlign.Center)
@@ -183,36 +151,42 @@ export default struct Index {
               .position({ x: "60vp", y: "40vp" })
               .fontColor(Color.Black)
               .shadow({ offsetX: 0, offsetY: 0, radius: 0, color: "#0d0c0c" })
+
+            Image($r('app.media.114'))
+              .width("40vp")
+              .height("40vp")
+              .position({ x: "10vp", y: "40vp" })
+              .objectFit(ImageFit.Cover)
             Image($r('app.media.112'))
               .width("40vp")
               .height("40vp")
-              .position({ x: "290vp", y: "85vp" })
-              .syncLoad(false)
+              .position({ x: "290vp", y: "80vp" })
               .objectFit(ImageFit.Cover)
-            Image('app.media.112')
+            Image($r('app.media.114'))
               .width("40vp")
               .height("40vp")
-              .position({ x: "10vp", y: "130vp" })
-              .syncLoad(false)
-              .objectFit(ImageFit.Contain)
+              .position({ x: "10vp", y: "85vp" })
+              .objectFit(ImageFit.Cover)
+            Image($r('app.media.112'))
+              .width("40vp")
+              .height("40vp")
+              .position({ x: "290vp", y: "35vp" })
+              .objectFit(ImageFit.Cover)
             Text("志愿者王阿姨")
               .width("150vp")
               .height("40vp")
               .position({ x: "60vp", y: "130vp" })
               .fontColor(Color.Black)
-            Image('app.media.112')
+            Image($r('app.media.112'))
               .width("40vp")
               .height("40vp")
-              .offset({ x: "290vp", y: "57vp" })
-              .syncLoad(false)
-              .objectFit(ImageFit.Contain)
-            Image('app.media.114')
+              .position({ x: "290vp", y: "125vp" })
+              .objectFit(ImageFit.Cover)
+            Image($r('app.media.114'))
               .width("40vp")
               .height("40vp")
-              .position({ x: "290vp", y: "40vp" })
-              .borderColor("#f7f7f7")
-              .syncLoad(false)
-              .objectFit(ImageFit.Contain)
+              .position({ x: "10vp", y: "130vp" })
+              .objectFit(ImageFit.Cover)
           }//紧急联系人
           .width("100%")
           .height("40%")
@@ -220,7 +194,7 @@ export default struct Index {
           .borderWidth("2vp")
           .borderColor("#f5f8f9")
           .borderRadius("10vp")
-          .opacity(0.4)
+          //.opacity(0.4)
       }
     .width("100%")
     .height("100%")

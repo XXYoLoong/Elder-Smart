@@ -1,5 +1,11 @@
 {
   "src": [
-    "pages/Index"
+    "pages/Index",
+    "pages/register",
+    "pages/login",
+    "pages/Parents",
+    "pages/page",
+    "pages/Buspage",
+    "pages/callPage","pages/daohangPage","pages/shequPage","pages/richengPage","pages/Oldman","pages/minePage","pages/healthPage"
   ]
 }

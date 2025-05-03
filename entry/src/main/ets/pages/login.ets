@@ -1,12 +1,15 @@
 import router from '@ohos.router';
 import prompt from '@ohos.prompt';
 import { db } from '../signup/Database';
+
+
 @Entry
 @Component
 struct Home {
   @State username:string = '123'
   @State account:string = '1'
   @State password:string = '1'
+
   build() {
     Column() {
       Column() {
@@ -98,12 +101,12 @@ struct Home {
         console.log(account.username + ' ' + account.password);
         if (this.account === account.username && this.password === account.password) {
           router.push({
-            url: 'pages/Index',
+            url: 'pages/page',
           })
         }
       } else if ((this.account === "admin" && this.password === "1")) {
         router.push({
-          url: 'pages/Index',
+          url: 'pages/page',
         })
       } else {
         prompt.showToast({ message: '账号或密码错误' })
