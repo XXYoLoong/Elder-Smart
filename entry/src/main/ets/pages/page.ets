@@ -1,63 +1,93 @@
 import web_webview from '@ohos.web.webview';
 import router from '@ohos.router';
+
 @Entry
 @Component
 struct Page {
-  @State message: string = ' ElderSmart+ 乐龄智伴'
+  @State message: string = 'ElderSmart+ 乐龄智伴'
   webviewController: web_webview.WebviewController = new web_webview.WebviewController();
 
   build() {
     Column() {
+      // LOGO或顶部图片
       Image($r('app.media.gongyi'))
-        .width("69.62vp")
-        .height("63.47vp")
-        .offset({ x: "-118.39vp", y: "99.94vp" })
+        .width(80)
+        .height(80)
+        .margin({ bottom: 24 })
 
-      Column() {
-        Text(`${this.message}`)
-          .width("300vp")
-          .height("60vp")
-          .offset({ x: "0vp", y: "-64.18vp" })
-          .textAlign(TextAlign.Center)
-          .fontSize("20fp")
-          .fontWeight(FontWeight.Bold)
+      // 标题
+      Text(this.message)
+        .fontSize(24)
+        .fontWeight(FontWeight.Bold)
+        .fontColor('#222b45')
+        .margin({ bottom: 40 })
 
-        Button("老人登录入口")
-          .width("170vp")
-          .height("65vp")
-          .offset({ x: "0vp", y: "29.43vp" })
-          .backgroundColor("#fff67638")
-          .visibility(Visibility.Visible)
-          .onClick(() => {
-            router.pushUrl({ url: 'pages/Oldman'})
-          })
+      // 按钮组
+      Button('老人登录入口')
+        .width(220)
+        .height(48)
+        .fontSize(18)
+        .fontWeight(FontWeight.Medium)
+        .backgroundColor('#4e8cff')
+        .fontColor('#ffffff')
+        .borderRadius(24)
+        .shadow({ radius: 8, color: '#4e8cff33', offsetY: 2 })
+        .margin({ bottom: 20 })
+        .onClick(() => {
+          router.pushUrl({ url: 'pages/Oldman'})
+        })
 
-        Button("监护人入口")
-          .width("170vp")
-          .height("65vp")
-          .offset({ x: "0vp", y: "77.38vp" })
-          .backgroundColor("#fff67638")
-          .onClick(() => {
+      Button('监护人入口')
+        .width(220)
+        .height(48)
+        .fontSize(18)
+        .fontWeight(FontWeight.Medium)
+        .backgroundColor('#34c759')
+        .fontColor('#ffffff')
+        .borderRadius(24)
+        .shadow({ radius: 8, color: '#34c75933', offsetY: 2 })
+        .margin({ bottom: 20 })
+        .onClick(() => {
           router.pushUrl({ url: 'pages/Parents'})
         })
-        Button("医护管理入口")
-          .width("170vp")
-          .height("65vp")
-          .offset({ x: "0vp", y: "125.48vp" })
-          .backgroundColor("#fff67638")
-          .onClick(() => {
-            router.pushUrl({ url: 'pages/view'})
-          })
 
-      }
+      Button('数据分析系统')
+        .width(220)
+        .height(48)
+        .fontSize(18)
+        .fontWeight(FontWeight.Medium)
+        .backgroundColor('#ff9500')
+        .fontColor('#ffffff')
+        .borderRadius(24)
+        .shadow({ radius: 8, color: '#ff950033', offsetY: 2 })
+        .margin({ bottom: 20 })
+        .onClick(() => {
+          router.pushUrl({ url: 'pages/webviewPage'})
+        })
 
-      .width("100%")
-      .height("100%")
-      .offset({ x: "0vp", y: "-63.47vp" })
-      .backgroundColor("#ff9fd0f6")
-      .justifyContent(FlexAlign.Center)
+      Button('多模态监测')
+        .width(220)
+        .height(48)
+        .fontSize(18)
+        .fontWeight(FontWeight.Medium)
+        .backgroundColor('#ff3b30')
+        .fontColor('#ffffff')
+        .borderRadius(24)
+        .shadow({ radius: 8, color: '#ff3b3033', offsetY: 2 })
+        .onClick(() => {
+          router.pushUrl({ url: 'pages/maintenancePage'});
+        })
     }
-    .width("100%")
-    .height("100%")
+    .align(Alignment.Center)
+    .justifyContent(FlexAlign.Center)
+    .width('100%')
+    .height('100%')
+    .linearGradient({
+      angle: 135,
+      colors: [
+        [0xe0ecff, 0.0], // 渐变起点色
+        [0xf6fafd, 1.0]  // 渐变终点色
+      ]
+    })
   }
 }

@@ -6,6 +6,14 @@
     "pages/Parents",
     "pages/page",
     "pages/Buspage",
-    "pages/callPage","pages/daohangPage","pages/shequPage","pages/richengPage","pages/Oldman","pages/minePage","pages/healthPage"
+    "pages/callPage",
+    "pages/daohangPage",
+    "pages/shequPage",
+    "pages/richengPage",
+    "pages/Oldman",
+    "pages/minePage",
+    "pages/healthPage",
+    "pages/webviewPage",
+    "pages/maintenancePage"
   ]
 }
