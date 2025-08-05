@@ -16,7 +16,7 @@ struct WebViewPage {
           .onClick(() => {
             router.back();
           })
-        Text('HarmonyCare')
+        Text('HarmonyCare.cn')
           .fontSize(20)
           .fontWeight(FontWeight.Medium)
           .margin({ left: 16 })
