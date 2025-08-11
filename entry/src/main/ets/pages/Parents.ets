@@ -22,7 +22,7 @@ struct OldIndex {
 
         // Rehabilitation Tab - Navigate to Third Page
         TabContent() {
-         third()
+          third()
         }
         .linearGradient({
           direction: GradientDirection.Bottom,  // 设置渐变方向
