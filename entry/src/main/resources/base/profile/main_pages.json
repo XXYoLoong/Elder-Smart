@@ -10,7 +10,9 @@
     "pages/shequPage",
     "pages/richengPage",
     "pages/Oldman",
-    "pages/minePage",
+    "pages/MinePage",
+    "pages/ProfileEdit",
+    "pages/SettingsPage",
     "pages/healthPage",
     "pages/webviewPage",
     "pages/maintenancePage"
