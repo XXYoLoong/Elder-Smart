@@ -25,12 +25,12 @@ struct Home {
     if (table) {
       const row = table.select(1)
       if (row && this.account === row.username && this.password === row.password) {
-        router.pushUrl({ url: 'pages/page' })
+        router.pushUrl({ url: 'pages/Oldman' })
         return
       }
     }
     if (this.account === '1' && this.password === '1') {
-      router.pushUrl({ url: 'pages/page' })
+      router.pushUrl({ url: 'pages/Oldman' })
       return
     }
     promptAction.showToast({ message: '账号或密码错误' })
@@ -68,7 +68,7 @@ struct Home {
       // await http.post('/api/auth/huawei', { idToken, code: authCode, openId, unionId })
 
       promptAction.showToast({ message: '华为账号登录成功' })
-      router.pushUrl({ url: 'pages/page' })
+      router.pushUrl({ url: 'pages/Oldman' })
     } catch (e) {
       const err = e as BusinessError
       // 参考官方错误码给出更友好的提示

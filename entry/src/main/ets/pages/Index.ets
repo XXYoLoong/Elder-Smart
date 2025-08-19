@@ -109,7 +109,7 @@ struct Index {
                 Button($r('app.string.agreed'), { type: ButtonType.Capsule })
                   .onClick(() => {
                     router.pushUrl({
-                      url: 'pages/login'  // 跳转到目标页面
+                      url: 'pages/page'  // 跳转到目标页面
                     });
                     // if (this.visible === Visibility.Visible) {
                     //   this.visible = Visibility.None;

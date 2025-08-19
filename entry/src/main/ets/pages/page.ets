@@ -23,7 +23,7 @@ struct Page {
         .margin({ bottom: 40 })
 
       // 按钮组
-      Button('老人登录入口')
+      Button('软件登录入口')
         .width(220)
         .height(48)
         .fontSize(18)
@@ -34,22 +34,22 @@ struct Page {
         .shadow({ radius: 8, color: '#4e8cff33', offsetY: 2 })
         .margin({ bottom: 20 })
         .onClick(() => {
-          router.pushUrl({ url: 'pages/Oldman'})
+          router.pushUrl({ url: 'pages/login'})
         })
 
-      Button('监护人入口')
-        .width(220)
-        .height(48)
-        .fontSize(18)
-        .fontWeight(FontWeight.Medium)
-        .backgroundColor('#34c759')
-        .fontColor('#ffffff')
-        .borderRadius(24)
-        .shadow({ radius: 8, color: '#34c75933', offsetY: 2 })
-        .margin({ bottom: 20 })
-        .onClick(() => {
-          router.pushUrl({ url: 'pages/Parents'})
-        })
+      // Button('监护人入口')
+      //   .width(220)
+      //   .height(48)
+      //   .fontSize(18)
+      //   .fontWeight(FontWeight.Medium)
+      //   .backgroundColor('#34c759')
+      //   .fontColor('#ffffff')
+      //   .borderRadius(24)
+      //   .shadow({ radius: 8, color: '#34c75933', offsetY: 2 })
+      //   .margin({ bottom: 20 })
+      //   .onClick(() => {
+      //     router.pushUrl({ url: 'pages/Parents'})
+      //   })
 
       Button('数据分析系统')
         .width(220)
@@ -65,18 +65,18 @@ struct Page {
           router.pushUrl({ url: 'pages/webviewPage'})
         })
 
-      Button('多模态监测')
-        .width(220)
-        .height(48)
-        .fontSize(18)
-        .fontWeight(FontWeight.Medium)
-        .backgroundColor('#ff3b30')
-        .fontColor('#ffffff')
-        .borderRadius(24)
-        .shadow({ radius: 8, color: '#ff3b3033', offsetY: 2 })
-        .onClick(() => {
-          router.pushUrl({ url: 'pages/maintenancePage'});
-        })
+      // Button('多模态监测')
+      //   .width(220)
+      //   .height(48)
+      //   .fontSize(18)
+      //   .fontWeight(FontWeight.Medium)
+      //   .backgroundColor('#ff3b30')
+      //   .fontColor('#ffffff')
+      //   .borderRadius(24)
+      //   .shadow({ radius: 8, color: '#ff3b3033', offsetY: 2 })
+      //   .onClick(() => {
+      //     router.pushUrl({ url: 'pages/maintenancePage'});
+      //   })
     }
     .align(Alignment.Center)
     .justifyContent(FlexAlign.Center)
