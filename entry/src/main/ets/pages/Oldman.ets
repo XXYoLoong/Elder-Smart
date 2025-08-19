@@ -503,7 +503,7 @@ struct Index {
         }
         .onClick((): void => {
           try {
-            router.replaceUrl({ url: 'pages/minePage', params: { from: 'index' } })
+            router.replaceUrl({ url: 'pages/MinePage', params: { from: 'index' } })
           } catch (err) {
             console.error('跳转失败:', err)
           }

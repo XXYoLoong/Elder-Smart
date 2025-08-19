@@ -170,9 +170,11 @@ struct MinePage {
         })
 
         Button() {
-          Image($r('app.media.mic')).width(30).height(30)
+          Image($r('app.media.gongyi')).width(50).height(50)
         }
-        .width(60).height(60).backgroundColor($r('sys.color.ohos_id_color_activated')).borderRadius(30)
+        .width(60).height(60)
+        .backgroundColor('#fff5d1d1')
+        .borderRadius(30)
 
         Column() {
           Image($r('app.media.user2')).width(25).height(25)
