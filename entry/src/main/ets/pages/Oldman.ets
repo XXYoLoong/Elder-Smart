@@ -441,7 +441,7 @@ struct Index {
           .backgroundColor('#2196F3') // 清新的水蓝色
           .borderRadius(10)
           .onClick((): void => {
-            try { router.pushUrl({ url: 'pages/shequPage' }) } catch (err) { console.error('跳转失败:', err) }
+            try { router.pushUrl({ url: 'pages/Drink' }) } catch (err) { console.error('跳转失败:', err) }
           })
 
           Button() {

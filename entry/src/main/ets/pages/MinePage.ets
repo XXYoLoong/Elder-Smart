@@ -152,7 +152,12 @@ struct MinePage {
             .width('90%').height(50).fontSize(18).fontColor('#FFFFFF')
             .backgroundColor($r('sys.color.ohos_id_color_warning'))
             .borderRadius(25).margin({ top: 40, bottom: 20 })
-            .onClick((): void => this.logout())
+            .onClick(() => {
+              router.pushUrl({
+                url: 'pages/Index'
+              })
+            })
+          //.onClick((): void => this.logout())
         }
         .width('100%')
       }
