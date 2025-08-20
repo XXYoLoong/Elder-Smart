@@ -23,7 +23,7 @@ struct Page {
         .margin({ bottom: 40 })
 
       // 按钮组
-      Button('软件登录入口')
+      Button('软件入口')
         .width(220)
         .height(48)
         .fontSize(18)
@@ -34,7 +34,7 @@ struct Page {
         .shadow({ radius: 8, color: '#4e8cff33', offsetY: 2 })
         .margin({ bottom: 20 })
         .onClick(() => {
-          router.pushUrl({ url: 'pages/login'})
+          router.pushUrl({ url: 'pages/Oldman'})
         })
 
       // Button('监护人入口')

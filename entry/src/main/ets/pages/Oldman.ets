@@ -361,7 +361,7 @@ struct Index {
         Button() {
           Row() {
             Image($r('app.media.bus')).width(30).height(30)
-            Text('乘车二维码').fontSize(20)
+            Text('打开备忘录').fontSize(20)
               .fontColor($r('sys.color.ohos_id_color_text_primary'))
               .margin({ left: 15 })
           }
@@ -371,7 +371,7 @@ struct Index {
         .backgroundColor($r('sys.color.ohos_id_color_foreground_contrary'))
         .borderRadius(10)
         .onClick((): void => {
-          try { router.pushUrl({ url: 'pages/Buspage' }) } catch (err) { console.error('跳转失败:', err) }
+          try { router.pushUrl({ url: 'pages/NotePage' }) } catch (err) { console.error('跳转失败:', err) }
         })
 
         // 紧急呼叫

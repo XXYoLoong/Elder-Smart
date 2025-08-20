@@ -202,7 +202,7 @@ struct HealthPage {
               .width('100%').padding(16)
 
               Row() {
-                Image($r('app.media.heart')).width(48).height(48).objectFit(ImageFit.Cover).margin({ right: 12 })
+               // Image($r('app.media.heart')).width(48).height(48).objectFit(ImageFit.Cover).margin({ right: 12 })
                 MiniBars({
                   heights: this.heartBars,
                   totalHeightVp: this.barsHeight,
@@ -241,7 +241,7 @@ struct HealthPage {
                 color: '#4D7FFF'
               }).width('92%').margin({ top: 8 })
 
-              Image($r('app.media.heart2')).width('100%').height(80).objectFit(ImageFit.Cover).margin({ top: 8, bottom: 8 })
+             // Image($r('app.media.heart2')).width('100%').height(80).objectFit(ImageFit.Cover).margin({ top: 8, bottom: 8 })
             }
             .padding(16)
           }
@@ -294,7 +294,7 @@ struct HealthPage {
                 .width('100%')
                 .margin({ top: 12 })
 
-              Image($r('app.media.sleep')).width('100%').height(160).objectFit(ImageFit.Cover).margin({ top: 12 })
+              //Image($r('app.media.sleep')).width('100%').height(160).objectFit(ImageFit.Cover).margin({ top: 12 })
             }
             .padding(16)
           }
