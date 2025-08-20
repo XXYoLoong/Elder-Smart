@@ -6,11 +6,11 @@
         "type": "HarmonyOS",
         "material": {
           "storeFile": "D:/DevEcoSet/key/yoloong_key.p12",
-          "storePassword": "000000199990E74391EE0393786685B7AC0307CC39E3D7045B6CEC6E96B30C3C8040DF9982748C0927",
+          "storePassword": "00000019F42862D6AC32927A840367107A7B4AF3943E5423E5F714580B10D50D1DF8DF4349063994E4",
           "keyAlias": "yoloong_key",
-          "keyPassword": "00000019A0ADBB270EB01C03BF31CB28A38CAA31706D2A3FC7CC72D533C072DAA0F699DE75AA054611",
+          "keyPassword": "0000001917603DFBD7B6E9649BEFD0BFC7D242A9C0184141BA61185FDD6FD1A26B710125B9A748B4E9",
           "signAlg": "SHA256withECDSA",
-          "profile": "E:/OneDrive/Desktop/HarmonyCare_ALL/上线/yolong_HarmonyCareRelease.p7b",
+          "profile": "E:/OneDrive/Desktop/HarmonyCare_ALL/APP发布/2.0.0/yolong_HarmonyCareRelease.p7b",
           "certpath": "D:/DevEcoSet/key/yolong_key.cer"
         }
       }
